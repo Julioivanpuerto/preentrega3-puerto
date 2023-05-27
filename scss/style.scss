@@ -1,0 +1,267 @@
+// Variables
+$body-background-color: #000;
+$body-color: #888;
+$body-font-family: 'Roboto Condensed', sans-serif;
+$primary-color: #003955;
+$secondary-color: #e7eaec;
+$button-background-color: #003955;
+$button-hover-color: #0056b3;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin link-styles {
+  color: $secondary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Estilos CSS
+body {
+  background-color: $body-background-color;
+  color: $body-color;
+  font-family: $body-font-family;
+  margin: 0;
+  padding: 0;
+
+  header {
+    background-color: $primary-color;
+    padding: 10px 0;
+
+    .navbar-brand img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .navbar-nav .nav-link {
+      color: $body-color;
+    }
+
+    .navbar-nav .nav-link:hover {
+      transform: translateY(2px);
+    }
+  }
+
+  .contact-section {
+    background-color: $primary-color;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .contact-methods {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+        text-decoration: none;
+
+        i {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          color: #ff69b4;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 30px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.47);
+        border-radius: 5px;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: $button-background-color;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $button-hover-color;
+      }
+    }
+  }
+
+  .product-box {
+    background-color: #040404;
+    border: 1px solid #0b0a0a;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    select,
+    input[type="submit"] {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .footer-box {
+    background-color: #0b0b0b;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 10px;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+          text-decoration: none;
+          color: #c96969;
+          padding: 5px 10px;
+          border: 1px solid #050505;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  #Banner-principal {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .agradecimientos {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  h2 {
+    color: #555;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
