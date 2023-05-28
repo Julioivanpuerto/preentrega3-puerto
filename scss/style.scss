@@ -5,7 +5,7 @@ $body-font-family: 'Roboto Condensed', sans-serif;
 $primary-color: #003955;
 $secondary-color: #e7eaec;
 $button-background-color: #003955;
-$button-hover-color: #0056b3;
+$button-hover-color: #db3598;
 
 // Mixins
 @mixin flex-center {
@@ -20,6 +20,14 @@ $button-hover-color: #0056b3;
 
   &:hover {
     text-decoration: underline;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
@@ -176,7 +184,7 @@ body {
     }
 
     input[type="submit"] {
-      background-color: #007bff;
+      background-color: #ff00ae;
       color: #fff;
       border: none;
       cursor: pointer;
@@ -220,7 +228,7 @@ body {
   }
 
   h1 {
-    color: #333;
+    color: #c3ea04;
     text-align: center;
   }
 
@@ -235,7 +243,7 @@ body {
   }
 
   h2 {
-    color: #555;
+    color: #f58a08;
   }
 
   a {

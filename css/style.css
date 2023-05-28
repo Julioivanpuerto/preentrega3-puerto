@@ -87,7 +87,7 @@ body .contact-form button[type=submit] {
   cursor: pointer;
 }
 body .contact-form button[type=submit]:hover {
-  background-color: #0056b3;
+  background-color: #b30086;
 }
 body .product-box {
   background-color: #040404;
@@ -126,7 +126,7 @@ body .product-box input[type=submit] {
   margin-bottom: 20px;
 }
 body .product-box input[type=submit] {
-  background-color: #007bff;
+  background-color: #ff009d;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -162,10 +162,10 @@ body .footer-box p {
   margin: 0;
 }
 body h1 {
-  color: #333;
+  color: #e304b7;
   text-align: center;
 }
-body #Banner-principal {
+#Banner-principal {
   display: block;
   margin: 0 auto;
 }
@@ -174,10 +174,10 @@ body .agradecimientos {
   margin-top: 20px;
 }
 body h2 {
-  color: #555;
+  color: #0c7398;
 }
 body a {
-  color: #333;
+  color: #7611a8;
   text-decoration: none;
 }
 body footer {
