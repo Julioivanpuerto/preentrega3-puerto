@@ -1,0 +1,13 @@
+# Archivo para ignorar los archivos que no deseo que se muestren
+#ignorar archivos mac 
+.DS_store
+#ignorar archivos de texto
+*.txt 
+#ignorar carpeta img_cache
+img_cache 
+
+#ignorar carpeta clientes
+clientes
+
+
+
